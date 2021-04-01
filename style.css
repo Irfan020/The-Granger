@@ -1,0 +1,250 @@
+body{
+ margin: 0px;
+ padding: 0px;
+}
+a{
+ text-decoration:none;
+}
+ul{
+ list-style:none;
+}
+*{
+ box-sizing:border-box;
+}
+section{
+ width: 100%;
+ height: 100vh;
+ display:grid;
+ grid-template-rows:45px 1fr 45px;
+ grid-template-columns:45px 1fr 45px;
+ 
+}
+.top,.left,.right,.bottom{
+ background-color:#f1f2f4; 
+  
+}
+.center{
+ box-shadow:inset 2px 2px 12px rgba(0,0,0,0.03);
+position: relative;
+ overflow: hidden;
+ 
+ 
+}
+.top,.bottom{
+ grid-column: span 3;
+}
+ 
+.top,.left,.right{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.text-logo{
+ font-family:bebas kai; 
+ font-size: 12px;
+ letter-spacing: 2px;
+ font-weight: 400;
+ color:#2b2b2b;
+ 
+}
+.logo{
+ height:25px;
+}
+.b-menu {
+ display:flex;
+}
+.bottom{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0px 48px;
+ overflow: hidden;
+}
+.copyright{
+ font-family: Ebrima;
+ font-weight: bold;
+ font-size: 10px;
+ color:#949393;
+}
+.b-menu li a{
+ margin:0px 20px;
+ font-family: Ebrima;
+ font-weight: bold;
+ font-size: 20px;
+ color:black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width:50px;
+ height:50px;
+ padding: 0px;
+ line-height:0px;
+ background-color:#f1f2f4;
+
+}
+.language{
+  margin:0px 20px;
+ font-family: Ebrima;
+ font-weight: bold;
+ font-size: 10px;
+ color:#464646;
+ 
+}
+.fa-bars{
+ color:#2b2b2b;
+ font-size: 16px;
+}
+.buttons{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ display:flex;
+ justify-content: center;
+ align-items: center;
+}
+.btn{
+ margin:0px 20px;
+}
+.btn p{
+ color: #878586;
+ font-family: calibri;
+ font-weight: bold;
+ font-size: 12px;
+ letter-spacing: 2px;
+ line-height:3px;
+}
+.btn p:nth-child(1){
+ font-size:14px;
+}
+.btn-img{
+ width:160px;
+ height: 30px;
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.btn h1{
+ font-family:bebas kai;
+ color:#3a3939;
+ font-size: 12px;
+ letter-spacing: 5px;
+}
+.btn-img01{
+ background-color: red;
+}
+.btn-img02{
+ background-color: black;
+}
+ 
+.btn-img03{
+ background-color: yellow;
+}
+ 
+.btn-img04{
+ background-color: blue;
+}
+.slide-im1{
+ background-image:url("https://images.wallpapersden.com/image/download/emma-watson-red-dress-pic_aWpubGiUmZqaraWkpJRnbW1lrWZtZWU.jpg");
+}
+.slide-im2{
+ background-image:url("https://wallpapercave.com/wp/wp2069800.jpg");
+}
+.slide-im3{
+ background-image:url("https://medias.spotern.com/spots/w640/57/57781-1532336916.jpg");
+}
+.slide-im4{
+ background-image:url("https://mocah.org/uploads/posts/1187786-women-model-portrait-looking-at-viewer-photography-celebrity-actress-necklace-blue-fashion-hair-Emma-Watson-spring-girl-beauty-eye-photograph-hairstyle-portrait-photogr.jpg");
+}
+
+.slide{
+ width:20%;
+ transition: 0.5s;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+ 
+.slider-conatiner{
+ width:500%;
+ height: 100%;
+}
+input[name="r"]{
+ position: absolute;
+  visibility: hidden;
+ 
+ 
+}
+.slider-conatiner{
+display: flex;
+}
+#r1:checked ~ .slide1{
+ margin-left: 0;
+}
+#r2:checked ~ .slide1{
+ margin-left: -20%;
+}
+#r3:checked ~ .slide1{
+ margin-left: -40%;
+}
+#r4:checked ~ .slide1{
+ margin-left: -60%;
+}
+.menu{
+ margin: 0px;
+ padding: 0px;
+ flex-grow: 1;
+ position:absolute;
+ left: -100%;
+ background-image:url("https://free4kwallpapers.com/uploads/originals/2019/09/06/emma-watson-wallpaper.jpg");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ width:100%;
+ height: 100%;
+ box-sizing: border-box;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1;
+ 
+  
+}
+.menu ul{
+ text-align: center;
+ margin: 0px;
+ padding: 0px;
+}
+.menu ul li a{
+ padding: 10px;
+ display: inline-block;
+ font-family: calibri;
+ font-size: 1.3em;
+ text-transform: uppercase;
+ color:#FDFEFE;
+ 
+}
+.menu ul li a:hover{
+ color:#2b2b2b;
+}
+.toggle {
+ 
+ color:#1F1F1F;
+ font-size: 18px;
+}
+.toggle:before{
+ content:'\f0c9';
+ font-family: fontAwesome;
+ line-height: 30px;
+}
+.toggle.active:before{
+ content:'\f00d';
+ 
+}
+ 
+.active{
+ left:auto;
+ 
+ 
+}
